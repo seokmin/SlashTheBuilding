@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 2f9f7b1418cac1746b51c17c3864ddee
+timeCreated: 1468857511
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Building_0
+    21300002: Building_1
+    21300004: Building_2
+    21300006: Building_3
+    21300008: Building_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Building_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 480
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 27}
+        - {x: 116, y: 28}
+        - {x: 144, y: 33}
+        - {x: 165, y: 47}
+        - {x: 165, y: 59}
+        - {x: 162, y: 65}
+        - {x: 155, y: 64}
+        - {x: 15, y: 120}
+        - {x: -2, y: 120}
+        - {x: -169, y: 69}
+        - {x: -170, y: 65}
+        - {x: -170, y: 45}
+        - {x: -160, y: 38}
+        - {x: -135, y: 30}
+        - {x: -117, y: 28}
+        - {x: -124, y: 29}
+        - {x: -139, y: 29}
+        - {x: -141, y: 27}
+        - {x: -141, y: 0}
+        - {x: 139, y: 0}
+        - {x: 139, y: 27}
+        - {x: 137, y: 29}
+        - {x: 122, y: 29}
+    - name: Building_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 480
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 189, y: 81}
+        - {x: 192, y: 89}
+        - {x: 192, y: 105}
+        - {x: 183, y: 107}
+        - {x: 149, y: 120}
+        - {x: -142, y: 120}
+        - {x: -190, y: 108}
+        - {x: -190, y: 88}
+        - {x: -188, y: 81}
+        - {x: -137, y: 76}
+        - {x: -154, y: 34}
+        - {x: -154, y: 0}
+        - {x: 157, y: 0}
+        - {x: 157, y: 34}
+        - {x: 155, y: 36}
+        - {x: 154, y: 77}
+    - name: Building_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 480
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 188, y: 81}
+        - {x: 191, y: 89}
+        - {x: 191, y: 105}
+        - {x: 182, y: 107}
+        - {x: 148, y: 120}
+        - {x: -143, y: 120}
+        - {x: -191, y: 108}
+        - {x: -191, y: 88}
+        - {x: -189, y: 81}
+        - {x: -138, y: 76}
+        - {x: -155, y: 34}
+        - {x: -155, y: 0}
+        - {x: 156, y: 0}
+        - {x: 156, y: 34}
+        - {x: 154, y: 36}
+        - {x: 153, y: 77}
+    - name: Building_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 480
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 188, y: 81}
+        - {x: 191, y: 89}
+        - {x: 191, y: 105}
+        - {x: 182, y: 107}
+        - {x: 148, y: 120}
+        - {x: -143, y: 120}
+        - {x: -191, y: 108}
+        - {x: -191, y: 88}
+        - {x: -189, y: 81}
+        - {x: -138, y: 76}
+        - {x: -155, y: 34}
+        - {x: -155, y: 0}
+        - {x: 156, y: 0}
+        - {x: 156, y: 34}
+        - {x: 154, y: 36}
+        - {x: 153, y: 77}
+    - name: Building_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 215, y: 103}
+        - {x: 203, y: 107}
+        - {x: 163, y: 120}
+        - {x: -160, y: 120}
+        - {x: -191, y: 101}
+        - {x: -205, y: 106}
+        - {x: -211, y: 107}
+        - {x: -215, y: 101}
+        - {x: -215, y: 89}
+        - {x: -205, y: 82}
+        - {x: -174, y: 78}
+        - {x: -168, y: 0}
+        - {x: 170, y: 0}
+        - {x: 170, y: 78}
+        - {x: 207, y: 82}
+        - {x: 215, y: 88}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
