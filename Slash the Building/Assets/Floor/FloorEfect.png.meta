@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 7a34b328c1cc5584bbf65ad8b4d8ff7a
+timeCreated: 1469335461
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FloorEfect_0
+    21300002: FloorEfect_1
+    21300004: FloorEfect_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: FloorEfect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 11}
+        - {x: -32, y: -16}
+        - {x: -32, y: -32}
+        - {x: 29, y: -32}
+        - {x: 31, y: -27}
+        - {x: 31, y: -6}
+        - {x: 23, y: 11}
+    - name: FloorEfect_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: -1}
+        - {x: -9, y: -1}
+        - {x: -22, y: -9}
+        - {x: -25, y: -19}
+        - {x: -25, y: -32}
+        - {x: 22, y: -32}
+        - {x: 24, y: -27}
+        - {x: 24, y: -10}
+        - {x: 19, y: -4}
+    - name: FloorEfect_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: -9}
+        - {x: -5, y: -9}
+        - {x: -16, y: -18}
+        - {x: -16, y: -30}
+        - {x: -14, y: -32}
+        - {x: 14, y: -32}
+        - {x: 16, y: -27}
+        - {x: 16, y: -10}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

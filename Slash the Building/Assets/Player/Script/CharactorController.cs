@@ -13,21 +13,23 @@ public class CharactorController : MonoBehaviour
 	private bool isInAir = false;
 	public AudioSource audioSource = null;
 	public AudioClip jumpSound;
+	public AudioClip landingSound;
+	public Animator floorEffectAnimator;
+
 	Animator anim;
 
 
 
-	IEnumerator ExecuteAfterTime(float time)
+	public void JumpPhysically()
 	{
-		yield return new WaitForSeconds(time);
-
 		rigidBody.AddForce(new Vector2(0, jumpPower));
-		// Code to execute after the delay
 	}
+
 	void Start()
 	{
 		anim = GetComponent<Animator>();
 	}
+
 	void Update()
 	{
 		if (Input.GetKey(KeyCode.UpArrow) && isInAir == false)
@@ -35,7 +37,6 @@ public class CharactorController : MonoBehaviour
 			//0.2초 딜레이
 			anim.SetTrigger("Jump");
 			audioSource.PlayOneShot(jumpSound, 1);
-			StartCoroutine("ExecuteAfterTime", 0.15f);
 			isInAir = true;
 		}
 		if (Input.GetKeyDown(KeyCode.Z))
@@ -64,11 +65,11 @@ public class CharactorController : MonoBehaviour
 	{
 		if (coll.gameObject.name == "Floor")
 		{
-			Debug.Log("바닥에 닿았다.");
 			isInAir = false;
 			anim.SetBool("isOnFloor", true);
 			gameObject.layer = 8;
-
+			floorEffectAnimator.SetTrigger("FloorEffect");
+			audioSource.PlayOneShot(landingSound);
 		}
 	}
 
@@ -76,10 +77,10 @@ public class CharactorController : MonoBehaviour
 	{
 		if (coll.gameObject.name == "Floor")
 		{
-			Debug.Log("바닥에서 떨어졌다.");
 			isInAir = true;
 			anim.SetBool("isOnFloor", false);
 			gameObject.layer = 9;
+			floorEffectAnimator.SetTrigger("FloorEffect");
 		}
 	}
 }
