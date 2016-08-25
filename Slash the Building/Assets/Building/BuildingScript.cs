@@ -17,6 +17,7 @@ public class BuildingScript : MonoBehaviour
 	bool attackChecker = false;
 
 	public Animator slashAnim;
+	public Animator defenseAnim;
 
 	int currentMaxHeight = 0;
 	BoxCollider2D myCollider = null;
@@ -42,6 +43,7 @@ public class BuildingScript : MonoBehaviour
 		if (coll.gameObject.name == "Sword_Defense")
 		{
 			audioSource.PlayOneShot(defenseSound, 1);
+			defenseAnim.SetTrigger("defense");
 			rigidBody.velocity = new Vector2(0, tingSpeed);
 			playerBody.isKinematic = true;
 			playerBody.isKinematic = false;
