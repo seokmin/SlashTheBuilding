@@ -16,6 +16,8 @@ public class CharactorController : MonoBehaviour
 	public AudioClip landingSound;
 	public Animator floorEffectAnimator;
 
+	public UIManager uiManager;
+
 	Animator anim;
 
 
@@ -32,7 +34,7 @@ public class CharactorController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.UpArrow) && isInAir == false)
+		if (Input.GetKey(KeyCode.UpArrow) && isInAir == false && building.GetTuti() == false)
 		{
 			//0.2초 딜레이
 			anim.SetTrigger("Jump");
@@ -48,10 +50,34 @@ public class CharactorController : MonoBehaviour
 		{
 			building.StopAttack();
 		}
+
 		if (Input.GetKeyDown(KeyCode.DownArrow))
 		{
-			anim.SetBool("isDefense", true);
-			collider_Defense.enabled = true;
+			float percent = uiManager.GetDifenseGage();
+			if (percent > 1.0f)
+			{
+				anim.SetBool("isDefense", true);
+				collider_Defense.enabled = true;
+			}
+		}
+		if(Input.GetKey(KeyCode.DownArrow))
+		{
+			float percent = uiManager.GetDifenseGage();
+			uiManager.SetDifenseGage(percent - (Time.deltaTime * 64.0f));
+			if (percent <= 0.0f)
+			{
+				anim.SetBool("isDefense", false);
+				collider_Defense.enabled = false;
+				uiManager.SetDifenseGage(0);
+			}
+		}
+		else
+		{
+			float percent = uiManager.GetDifenseGage();
+			if (percent < 100.0f)
+			{
+				uiManager.SetDifenseGage(percent + Time.deltaTime * 16.0f);
+			}
 		}
 		if (Input.GetKeyUp(KeyCode.DownArrow))
 		{
