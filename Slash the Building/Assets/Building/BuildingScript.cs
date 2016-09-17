@@ -222,7 +222,7 @@ public class BuildingScript : MonoBehaviour
 		uiManager.SetScore(score);
 
 		if (wazaIng == false)
-			uiManager.SetWazaGage(Mathf.Min(100.0f,uiManager.GetWazaGage() + 17.0f));
+			uiManager.SetWazaGage(Mathf.Min(100.0f,uiManager.GetWazaGage() + 4.0f));
 
 		var slashedBlock = blockQueue.Dequeue();
 		// 파티클 뿌리는 부분

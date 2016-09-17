@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 using System;
 
@@ -16,6 +15,8 @@ public class UIManager : MonoBehaviour {
 	public Sprite waza_yet;
 	public Sprite waza_full;
 	public UnityEngine.UI.Text scoreText;
+
+	public MsgBox msgbox;
 
 	public void SetScore(uint score)
 	{
@@ -57,8 +58,8 @@ public class UIManager : MonoBehaviour {
 		PlayerPrefs.SetString("score", maxScore.ToString());
 		PlayerPrefs.Save();
 
-		EditorUtility.DisplayDialog("쥬금", "점수 : " + curScore + "\n최고 점수 : " + maxScore, "다시 시작");
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		msgbox.Open(curScore,maxScore);
+		
 	}
 	public void SetHeart(int n)
 	{
